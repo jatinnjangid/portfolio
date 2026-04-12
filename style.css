@@ -131,13 +131,13 @@ span{
 }
 
 .home-img{
-    border-radius: 50%;
+    border-radius: 0;
 }
 
 .home-img img{
     position: relative;
     width: 32vw;
-    border-radius: 50%;
+    border-radius: 40px;
     box-shadow: 0 0 25px solid #b74b4b;
     cursor: pointer;
     transition: 0.2s linear;
@@ -267,4 +267,3 @@ span{
         margin-top: 4rem;
     }
 }
-

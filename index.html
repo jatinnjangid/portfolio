@@ -1,50 +1,943 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
-</head>
-<body>
-    <header>
-        <a href="#" class="logo">jatincodex</a>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-        <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >Services</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Education</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="jatin.WEBP" alt="Jatin Jangid">
-        </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>jatin jangid</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>
-I am currently studying at <strong>Vivekananda Global University (VGU)</strong>, where I am pursuing a 
-<strong>B.Tech in Computer Science and Engineering (CSE)</strong> with a specialization in 
-<strong>Artificial Intelligence and Machine Learning (AI-ML)</strong>.  
-Along with my offline college studies, I am also enrolled in <strong>CCBP 4.0 Technology Program</strong>, 
-which helps me enhance my practical knowledge and industry-ready skills through online learning.  
-This blend of offline and online education allows me to strengthen both my academic foundation and 
-technical expertise.
-</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/jatin-jangidx"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/jatinjangid80"><i class="fa-brands fa-github"></i></a>
-                <a href="https://x.com/jatin_jangid80"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/jatinnjangid"><i class="fa-brands fa-instagram"></i></a>
+  <meta
+    name="description"
+    content="Jatin Jangid — Full-Stack Developer & AI Engineer building modern SaaS, AI applications and scalable business systems."
+  />
+
+  <title>Jatin Jangid | Full-Stack Developer & AI Engineer</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+
+      <a href="#home" class="logo">
+        jatin<span>codex</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="nav-cta">
+        Hire Me <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+
+      <button class="mobile-menu" id="mobileMenuBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars" id="menuIcon"></i>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-bg"></div>
+
+      <div class="container hero-grid">
+
+        <!-- Photo -->
+        <div class="hero-image-wrap">
+
+          <div class="availability">
+            <span class="status-dot"></span>
+            Available for work
+          </div>
+
+          <div class="image-frame">
+            <picture>
+              <source srcset="jatin.webp" type="image/webp" />
+              <img
+                src="profile.jpg"
+                alt="Jatin Jangid"
+                loading="eager"
+              />
+            </picture>
+          </div>
+
+          <div class="floating-card">
+            <div class="mini-icon">
+              <i class="fa-solid fa-code"></i>
             </div>
-            <a href="https://forms.gle/K6jtYgg6ynd6zgg37" class="btn">Hire me</a>
+
+            <div>
+              <strong>Full-Stack Developer</strong>
+              <span>AI • SaaS • Web Apps</span>
+            </div>
+          </div>
+
         </div>
+
+
+        <!-- Content -->
+        <div class="hero-content">
+
+          <p class="eyebrow">
+            HELLO, I'M JATIN JANGID
+          </p>
+
+          <h1>
+            Full-Stack Developer
+            <span>&amp; AI Engineer.</span>
+          </h1>
+
+          <p class="hero-description">
+            I build modern SaaS products, AI-powered applications,
+            business websites and scalable digital systems that turn
+            ideas into real products.
+          </p>
+
+          <div class="hero-tech">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>AI</span>
+            <span>AWS</span>
+          </div>
+
+          <div class="hero-buttons">
+
+            <a href="#work" class="btn btn-primary">
+              View My Work
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+              Let's Work Together
+            </a>
+
+          </div>
+
+          <div class="social-links">
+
+            <a
+              href="https://github.com/jatinnjangid"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/jatinnjangid"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="https://x.com/jatin_jangid80"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
+
+
+    <!-- ================= STATS ================= -->
+    <section class="stats">
+      <div class="container stats-grid">
+
+        <div class="stat-card">
+          <strong>15+</strong>
+          <span>Projects Built</span>
+        </div>
+
+        <div class="stat-card">
+          <strong>5+</strong>
+          <span>Live Applications</span>
+        </div>
+
+        <div class="stat-card">
+          <strong>3+</strong>
+          <span>Production Systems</span>
+        </div>
+
+        <div class="stat-card">
+          <strong>&infin;</strong>
+          <span>Ideas to Build</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= WORK ================= -->
+    <section class="section" id="work">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-label">SELECTED WORK</span>
+
+            <h2>
+              Projects that solve
+              <span>real problems.</span>
+            </h2>
+          </div>
+
+          <a
+            href="https://github.com/jatinnjangid"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-link"
+          >
+            View GitHub
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card featured">
+
+            <div class="project-number">01</div>
+
+            <div class="project-content">
+
+              <span class="project-category">
+                AI AUTOMATION
+              </span>
+
+              <h3>Agentflow</h3>
+
+              <p>
+                AI automation platform that converts natural-language
+                prompts into executable visual workflows with
+                multi-agent orchestration and real-time monitoring.
+              </p>
+
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Redis</span>
+                <span>Socket.IO</span>
+              </div>
+
+              <a
+                href="https://github.com/jatinnjangid/Agentic-Ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Explore Project
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Project 2 -->
+          <article class="project-card">
+
+            <div class="project-number">02</div>
+
+            <div class="project-content">
+
+              <span class="project-category">
+                BUSINESS CRM
+              </span>
+
+              <h3>LookMyHolidays CRM</h3>
+
+              <p>
+                Business CRM for managing leads, employees, customers,
+                bookings, payments, visa and travel insurance workflows.
+              </p>
+
+              <div class="project-tags">
+                <span>React</span>
+                <span>Supabase</span>
+                <span>PostgreSQL</span>
+                <span>Vercel</span>
+              </div>
+
+              <a
+                href="https://github.com/jatinnjangid/CRM-lookmywebsites"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Explore Project
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Project 3 -->
+          <article class="project-card">
+
+            <div class="project-number">03</div>
+
+            <div class="project-content">
+
+              <span class="project-category">
+                IOT + AI
+              </span>
+
+              <h3>Smart Parking</h3>
+
+              <p>
+                IoT-powered smart parking platform with real-time
+                availability, reservations, payments and predictive
+                parking analytics.
+              </p>
+
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>ESP32</span>
+                <span>AWS</span>
+                <span>Redis</span>
+              </div>
+
+              <a
+                href="https://github.com/jatinnjangid/Smart-parking-"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Explore Project
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Project 4 -->
+          <article class="project-card">
+
+            <div class="project-number">04</div>
+
+            <div class="project-content">
+
+              <span class="project-category">
+                SAAS
+              </span>
+
+              <h3>StudyPilot</h3>
+
+              <p>
+                Multi-property management SaaS for rooms, residents,
+                finances, maintenance and AI-powered business insights.
+              </p>
+
+              <div class="project-tags">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Node.js</span>
+                <span>Gemini AI</span>
+              </div>
+
+              <a
+                href="https://github.com/jatinnjangid/Studypoint"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Explore Project
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section skills-section" id="skills">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-label">TECH STACK</span>
+
+            <h2>
+              Tools I use to
+              <span>build products.</span>
+            </h2>
+          </div>
+        </div>
+
+
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <div class="skill-icon">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+
+            <h3>Frontend</h3>
+
+            <div class="skill-list">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Tailwind CSS</span>
+              <span>Vite</span>
+            </div>
+          </div>
+
+
+          <div class="skill-group">
+            <div class="skill-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+
+            <h3>Backend</h3>
+
+            <div class="skill-list">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+              <span>REST APIs</span>
+            </div>
+          </div>
+
+
+          <div class="skill-group">
+            <div class="skill-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+
+            <h3>AI / ML</h3>
+
+            <div class="skill-list">
+              <span>OpenAI</span>
+              <span>Gemini</span>
+              <span>Claude</span>
+              <span>LangGraph</span>
+              <span>Whisper</span>
+            </div>
+          </div>
+
+
+          <div class="skill-group">
+            <div class="skill-icon">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+
+            <h3>Cloud & DevOps</h3>
+
+            <div class="skill-list">
+              <span>AWS</span>
+              <span>Vercel</span>
+              <span>Docker</span>
+              <span>Redis</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-label">EXPERIENCE</span>
+
+            <h2>
+              My journey in
+              <span>building products.</span>
+            </h2>
+          </div>
+        </div>
+
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+              <span class="timeline-date">
+                2026
+              </span>
+
+              <h3>
+                Full-Stack Developer
+              </h3>
+
+              <h4>
+                LookMyHolidays
+              </h4>
+
+              <p>
+                Worked on travel platforms, CRM systems, business
+                workflows, dashboards and customer-facing applications.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+              <span class="timeline-date">
+                2024 — Present
+              </span>
+
+              <h3>
+                B.Tech Computer Science & Engineering
+              </h3>
+
+              <h4>
+                Vivekananda Global University
+              </h4>
+
+              <p>
+                Focused on software engineering, artificial intelligence,
+                machine learning and practical product development.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section services-section" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-label">WHAT I BUILD</span>
+
+            <h2>
+              Digital products built
+              <span>for growth.</span>
+            </h2>
+          </div>
+
+        </div>
+
+
+        <div class="services-grid">
+
+          <div class="service-card">
+            <span>01</span>
+            <i class="fa-solid fa-globe"></i>
+            <h3>Business Websites</h3>
+            <p>
+              Fast, responsive websites designed to generate enquiries
+              and build trust.
+            </p>
+          </div>
+
+
+          <div class="service-card">
+            <span>02</span>
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>SaaS Applications</h3>
+            <p>
+              Scalable dashboards, multi-tenant systems and subscription
+              products.
+            </p>
+          </div>
+
+
+          <div class="service-card">
+            <span>03</span>
+            <i class="fa-solid fa-robot"></i>
+            <h3>AI Applications</h3>
+            <p>
+              AI agents, automation workflows and intelligent business
+              applications.
+            </p>
+          </div>
+
+
+          <div class="service-card">
+            <span>04</span>
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>CRM & Dashboards</h3>
+            <p>
+              Custom management platforms for leads, employees,
+              customers and analytics.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact-section" id="contact">
+
+      <div class="container contact-grid">
+
+        <div class="contact-content">
+
+          <span class="section-label">
+            LET'S BUILD SOMETHING
+          </span>
+
+          <h2>
+            Have an idea?
+            <span>Let's make it real.</span>
+          </h2>
+
+          <p>
+            Whether you need a business website, SaaS platform,
+            AI application or custom web system, let's discuss
+            your project.
+          </p>
+
+          <div class="contact-details">
+
+            <a href="mailto:jatinjangid72973@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span>
+                <small>Email</small>
+                jatinjangid72973@gmail.com
+              </span>
+            </a>
+
+            <a
+              href="https://github.com/jatinnjangid"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span>
+                <small>GitHub</small>
+                github.com/jatinnjangid
+              </span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/jatinnjangid"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>
+                <small>LinkedIn</small>
+                linkedin.com/in/jatinnjangid
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <form class="contact-form" action="https://formspree.io/f/xvgzbgky" method="POST">
+
+          <div class="input-row">
+
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+          </div>
+
+
+          <div class="input-group">
+
+            <label for="project">
+              Project Type
+            </label>
+
+            <select id="project" name="project">
+
+              <option value="">
+                Select a project
+              </option>
+
+              <option value="Business Website">
+                Business Website
+              </option>
+
+              <option value="SaaS Application">
+                SaaS Application
+              </option>
+
+              <option value="AI Application">
+                AI Application
+              </option>
+
+              <option value="CRM / Dashboard">
+                CRM / Dashboard
+              </option>
+
+              <option value="E-Commerce">
+                E-Commerce
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="input-group">
+
+            <label for="message">
+              Message
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="btn btn-primary submit-btn"
+          >
+            Send Project Inquiry
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+
+    <div class="container footer-wrapper">
+
+      <div>
+
+        <a href="#home" class="logo">
+          jatin<span>codex</span>
+        </a>
+
+        <p>
+          Full-Stack Developer &amp; AI Engineer.
+        </p>
+
+      </div>
+
+      <div class="footer-social">
+
+        <a
+          href="https://github.com/jatinnjangid"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub Profile"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/jatinnjangid"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn Profile"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a
+          href="mailto:jatinjangid72973@gmail.com"
+          aria-label="Send Email"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2026 Jatin Jangid. All rights reserved.
+    </div>
+
+  </footer>
+
+
+  <!-- ================= MOBILE CTA ================= -->
+  <div class="mobile-bottom-bar">
+
+    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-whatsapp"></i>
+      WhatsApp
+    </a>
+
+    <a href="#contact">
+      <i class="fa-solid fa-paper-plane"></i>
+      Hire Me
+    </a>
+
+  </div>
+
+  <!-- Interactive script for mobile menu & active links -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
+    const menuIcon = document.getElementById('menuIcon');
+
+    if (mobileMenuBtn && navLinks) {
+      mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        if (navLinks.classList.contains('open')) {
+          menuIcon.classList.replace('fa-bars', 'fa-xmark');
+        } else {
+          menuIcon.classList.replace('fa-xmark', 'fa-bars');
+        }
+      });
+
+      // Close mobile menu when a nav link is clicked
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          if (menuIcon) {
+            menuIcon.classList.replace('fa-xmark', 'fa-bars');
+          }
+        });
+      });
+    }
+
+    // Update active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.pageYOffset;
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 120;
+        const sectionId = current.getAttribute('id');
+        const navAnchor = document.querySelector('.nav-links a[href*=' + sectionId + ']');
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          if (navAnchor) navAnchor.classList.add('active');
+        } else {
+          if (navAnchor) navAnchor.classList.remove('active');
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>

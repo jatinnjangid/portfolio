@@ -1535,50 +1535,75 @@ img {
   font-size: 11px;
 }
 
-.footer-links {
+.footer-social-tabs,
+.footer-links,
+.footer-social {
   display: flex;
   gap: 12px;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.footer-tab,
+.footer-social-tabs a,
+.footer-social a,
+.footer-links a,
 .footer-btn {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 18px;
+  justify-content: center;
   background: #111111;
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
   color: #e5e5e5;
-  font-size: 13px;
-  font-weight: 600;
-  transition: all 0.25s ease;
+  font-size: 18px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  text-decoration: none;
 }
 
-.footer-btn i:first-child {
-  color: var(--accent-light);
-  font-size: 14px;
+.footer-tab i,
+.footer-social-tabs a i,
+.footer-social a i,
+.footer-links a i,
+.footer-btn i {
+  color: #e5e5e5;
+  font-size: 18px;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
-.footer-btn .icon-arrow {
-  color: var(--muted);
-  font-size: 10px;
-  transition: transform 0.25s ease, color 0.25s ease;
-}
-
+.footer-tab:hover,
+.footer-social-tabs a:hover,
+.footer-social a:hover,
+.footer-links a:hover,
 .footer-btn:hover {
-  border-color: rgba(207, 77, 77, 0.45);
-  background: rgba(207, 77, 77, 0.1);
+  border-color: rgba(207, 77, 77, 0.55);
+  background: rgba(207, 77, 77, 0.12);
   color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(207, 77, 77, 0.25);
 }
 
-.footer-btn:hover .icon-arrow {
+.footer-tab:hover i,
+.footer-social-tabs a:hover i,
+.footer-social a:hover i,
+.footer-links a:hover i,
+.footer-btn:hover i {
   color: var(--accent-light);
-  transform: translate(2px, -2px);
+  transform: scale(1.12);
+}
+
+.footer-tab:active,
+.footer-social-tabs a:active,
+.footer-social a:active,
+.footer-links a:active,
+.footer-btn:active {
+  transform: translateY(-1px) scale(0.96);
 }
 
 .footer-bottom {
@@ -1987,16 +2012,23 @@ img {
     gap: 20px;
   }
 
-  .footer-links {
-    gap: 10px;
+  .footer-social-tabs,
+  .footer-links,
+  .footer-social {
+    gap: 12px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
 
+  .footer-tab,
+  .footer-social-tabs a,
+  .footer-social a,
+  .footer-links a,
   .footer-btn {
-    padding: 8px 14px;
-    font-size: 12px;
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
   }
 
 

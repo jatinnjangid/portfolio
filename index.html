@@ -50,15 +50,16 @@
 
       <nav class="nav-links" id="navLinks">
         <a class="active" href="#home">Home</a>
-        <a href="#work">Work</a>
+        <a href="#work">View Work</a>
+        <a href="#services">Services</a>
+        <a href="#architecture">Architecture</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <a href="#contact" class="nav-cta">
-        Hire Me <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        Hire Me <i class="fa-solid fa-arrow-right"></i>
       </a>
 
       <button class="mobile-menu" id="mobileMenuBtn" aria-label="Toggle Menu">
@@ -103,8 +104,8 @@
             </div>
 
             <div>
-              <strong>Full-Stack Developer</strong>
-              <span>AI • SaaS • Web Apps</span>
+              <strong>Full-Stack Developer &amp; AI Engineer</strong>
+              <span>SaaS · CRM · AI Systems</span>
             </div>
           </div>
 
@@ -124,31 +125,41 @@
           </h1>
 
           <p class="hero-description">
-            I build modern SaaS products, AI-powered applications,
-            business websites and scalable digital systems that turn
-            ideas into real products.
+            I build modern SaaS products, business applications, AI systems, and high-performance websites.
           </p>
 
           <div class="hero-tech">
             <span>React</span>
             <span>Next.js</span>
+            <span>TypeScript</span>
             <span>Node.js</span>
             <span>PostgreSQL</span>
-            <span>AI</span>
+            <span>AI Agents</span>
             <span>AWS</span>
           </div>
 
           <div class="hero-buttons">
 
             <a href="#work" class="btn btn-primary">
-              View My Work
+              View My Projects
               <i class="fa-solid fa-arrow-right"></i>
             </a>
 
             <a href="#contact" class="btn btn-outline">
               Let's Work Together
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
 
+          </div>
+
+          <div class="hero-resume-action">
+            <a
+              href="mailto:jatinjangid72973@gmail.com?subject=Resume%20Request%20-%20Jatin%20Jangid"
+              class="hero-resume-link"
+            >
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Download Resume
+            </a>
           </div>
 
           <div class="social-links">
@@ -189,8 +200,13 @@
     </section>
 
 
-    <!-- ================= STATS ================= -->
+    <!-- ================= PROOF & STATS ================= -->
     <section class="stats">
+      <div class="proof-strip">
+        <span class="proof-badge"><i class="fa-solid fa-certificate"></i> Verified Proof</span>
+        <span class="proof-text">15+ Projects · 5+ Live Apps · AI · SaaS · Full-Stack</span>
+      </div>
+
       <div class="container stats-grid">
 
         <div class="stat-card">
@@ -209,15 +225,15 @@
         </div>
 
         <div class="stat-card">
-          <strong>&infin;</strong>
-          <span>Ideas to Build</span>
+          <strong>100%</strong>
+          <span>Full-Stack &amp; AI Execution</span>
         </div>
 
       </div>
     </section>
 
 
-    <!-- ================= WORK ================= -->
+    <!-- ================= WORK (CASE-STUDY BASED) ================= -->
     <section class="section" id="work">
 
       <div class="container">
@@ -228,8 +244,8 @@
             <span class="section-label">SELECTED WORK</span>
 
             <h2>
-              Projects that solve
-              <span>real problems.</span>
+              Featured projects built
+              <span>for real impact.</span>
             </h2>
           </div>
 
@@ -239,7 +255,7 @@
             rel="noopener noreferrer"
             class="text-link"
           >
-            View GitHub
+            View GitHub Profile
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
 
@@ -248,168 +264,600 @@
 
         <div class="projects-grid">
 
-          <!-- Project 1 -->
+          <!-- Project 1: Agentflow -->
           <article class="project-card featured">
 
-            <div class="project-number">01</div>
+            <div class="project-card-top">
+              <span class="project-category">AI AUTOMATION</span>
+              <span class="project-number">01</span>
+            </div>
 
             <div class="project-content">
-
-              <span class="project-category">
-                AI AUTOMATION
-              </span>
 
               <h3>Agentflow</h3>
+              <p class="project-tagline">Visual multi-agent workflow orchestration &amp; automation platform</p>
 
-              <p>
-                AI automation platform that converts natural-language
-                prompts into executable visual workflows with
-                multi-agent orchestration and real-time monitoring.
-              </p>
+              <div class="case-study-grid">
 
-              <div class="project-tags">
-                <span>Next.js</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-                <span>Redis</span>
-                <span>Socket.IO</span>
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-circle-exclamation"></i> Problem
+                  </span>
+                  <p>
+                    Connecting multi-agent LLM systems required brittle scripting with zero visibility into live token flows, agent handoffs, or runtime failures.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-lightbulb"></i> Solution
+                  </span>
+                  <p>
+                    Engineered a visual node canvas that transforms natural language prompts into executable, stateful multi-agent DAG workflows with real-time stream execution.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-layer-group"></i> Tech Stack
+                  </span>
+                  <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                    <span>Redis</span>
+                    <span>Socket.IO</span>
+                    <span>OpenAI</span>
+                  </div>
+                </div>
+
+                <div class="case-block case-result">
+                  <span class="case-label">
+                    <i class="fa-solid fa-chart-line"></i> Key Result
+                  </span>
+                  <p>
+                    Sub-second inter-agent latency, live visual debugging, and 60% faster prototype-to-pipeline automation deployment.
+                  </p>
+                </div>
+
               </div>
 
-              <a
-                href="https://github.com/jatinnjangid/Agentic-Ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-              >
-                Explore Project
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/jatinnjangid/Agentic-Ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary"
+                >
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                  href="https://github.com/jatinnjangid/Agentic-Ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline"
+                >
+                  GitHub <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a
+                  href="https://github.com/jatinnjangid/Agentic-Ai#readme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="case-study-text-link"
+                >
+                  View Case Study <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
 
             </div>
 
           </article>
 
 
-          <!-- Project 2 -->
+          <!-- Project 2: LookMyHolidays CRM -->
           <article class="project-card">
 
-            <div class="project-number">02</div>
+            <div class="project-card-top">
+              <span class="project-category">BUSINESS CRM</span>
+              <span class="project-number">02</span>
+            </div>
 
             <div class="project-content">
-
-              <span class="project-category">
-                BUSINESS CRM
-              </span>
 
               <h3>LookMyHolidays CRM</h3>
+              <p class="project-tagline">Centralized leads, customers, bookings and employee workflows</p>
 
-              <p>
-                Business CRM for managing leads, employees, customers,
-                bookings, payments, visa and travel insurance workflows.
-              </p>
+              <div class="case-study-grid">
 
-              <div class="project-tags">
-                <span>React</span>
-                <span>Supabase</span>
-                <span>PostgreSQL</span>
-                <span>Vercel</span>
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-circle-exclamation"></i> Problem
+                  </span>
+                  <p>
+                    Disjointed lead capture, manual payment tracking, and fragmented spreadsheets caused delayed customer follow-ups and lost travel bookings.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-lightbulb"></i> Solution
+                  </span>
+                  <p>
+                    Engineered a unified enterprise CRM consolidating multi-source lead pipelines, automated booking workflows, visa/insurance pipeline tracking, and role-based staff permissions.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-layer-group"></i> Tech Stack
+                  </span>
+                  <div class="project-tags">
+                    <span>React</span>
+                    <span>Supabase</span>
+                    <span>PostgreSQL</span>
+                    <span>Vercel</span>
+                    <span>Tailwind CSS</span>
+                  </div>
+                </div>
+
+                <div class="case-block case-result">
+                  <span class="case-label">
+                    <i class="fa-solid fa-chart-line"></i> Key Result
+                  </span>
+                  <p>
+                    Centralized 100% of customer operations, drastically cut quotation turnaround times, and unified cross-team booking accountability.
+                  </p>
+                </div>
+
               </div>
 
-              <a
-                href="https://github.com/jatinnjangid/CRM-lookmywebsites"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-              >
-                Explore Project
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/jatinnjangid/CRM-lookmywebsites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary"
+                >
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                  href="https://github.com/jatinnjangid/CRM-lookmywebsites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline"
+                >
+                  GitHub <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a
+                  href="https://github.com/jatinnjangid/CRM-lookmywebsites#readme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="case-study-text-link"
+                >
+                  View Case Study <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
 
             </div>
 
           </article>
 
 
-          <!-- Project 3 -->
+          <!-- Project 3: Smart Parking -->
           <article class="project-card">
 
-            <div class="project-number">03</div>
+            <div class="project-card-top">
+              <span class="project-category">IOT + AI PLATFORM</span>
+              <span class="project-number">03</span>
+            </div>
 
             <div class="project-content">
-
-              <span class="project-category">
-                IOT + AI
-              </span>
 
               <h3>Smart Parking</h3>
+              <p class="project-tagline">Hardware-integrated real-time parking &amp; predictive analytics</p>
 
-              <p>
-                IoT-powered smart parking platform with real-time
-                availability, reservations, payments and predictive
-                parking analytics.
-              </p>
+              <div class="case-study-grid">
 
-              <div class="project-tags">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>ESP32</span>
-                <span>AWS</span>
-                <span>Redis</span>
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-circle-exclamation"></i> Problem
+                  </span>
+                  <p>
+                    Motorists waste 15–20 minutes circling for vacant parking spaces, generating urban traffic bottlenecks, fuel waste, and lost parking facility revenue.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-lightbulb"></i> Solution
+                  </span>
+                  <p>
+                    Integrated ESP32 ultrasonic hardware sensors with cloud microservices, live slot availability maps, cashless reservations, and AI predictive occupancy modeling.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-layer-group"></i> Tech Stack
+                  </span>
+                  <div class="project-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>ESP32</span>
+                    <span>AWS</span>
+                    <span>Redis</span>
+                    <span>Python</span>
+                  </div>
+                </div>
+
+                <div class="case-block case-result">
+                  <span class="case-label">
+                    <i class="fa-solid fa-chart-line"></i> Key Result
+                  </span>
+                  <p>
+                    Sub-500ms sensor-to-cloud telemetry, automated slot reservations, and dynamic pricing insights based on live demand trends.
+                  </p>
+                </div>
+
               </div>
 
-              <a
-                href="https://github.com/jatinnjangid/Smart-parking-"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-              >
-                Explore Project
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/jatinnjangid/Smart-parking-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary"
+                >
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                  href="https://github.com/jatinnjangid/Smart-parking-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline"
+                >
+                  GitHub <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
 
             </div>
 
           </article>
 
 
-          <!-- Project 4 -->
+          <!-- Project 4: StudyPilot -->
           <article class="project-card">
 
-            <div class="project-number">04</div>
+            <div class="project-card-top">
+              <span class="project-category">SAAS APPLICATION</span>
+              <span class="project-number">04</span>
+            </div>
 
             <div class="project-content">
 
-              <span class="project-category">
-                SAAS
-              </span>
-
               <h3>StudyPilot</h3>
+              <p class="project-tagline">Multi-property student housing &amp; resident operations SaaS</p>
 
-              <p>
-                Multi-property management SaaS for rooms, residents,
-                finances, maintenance and AI-powered business insights.
-              </p>
+              <div class="case-study-grid">
 
-              <div class="project-tags">
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Node.js</span>
-                <span>Gemini AI</span>
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-circle-exclamation"></i> Problem
+                  </span>
+                  <p>
+                    Student accommodation and hostel operators struggle with manual occupancy ledgers, delinquent rent collections, and unorganized maintenance requests.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-lightbulb"></i> Solution
+                  </span>
+                  <p>
+                    Developed an all-in-one SaaS dashboard for multi-property rooms, resident onboarding, digital rent ledgers, automated notices, and Gemini AI-driven business analytics.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">
+                    <i class="fa-solid fa-layer-group"></i> Tech Stack
+                  </span>
+                  <div class="project-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Node.js</span>
+                    <span>PostgreSQL</span>
+                    <span>Gemini AI</span>
+                  </div>
+                </div>
+
+                <div class="case-block case-result">
+                  <span class="case-label">
+                    <i class="fa-solid fa-chart-line"></i> Key Result
+                  </span>
+                  <p>
+                    Automated monthly rent billing, reduced vacancy turnover delays, and provided instant AI financial health projections.
+                  </p>
+                </div>
+
               </div>
 
-              <a
-                href="https://github.com/jatinnjangid/Studypoint"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-              >
-                Explore Project
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/jatinnjangid/Studypoint"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary"
+                >
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <a
+                  href="https://github.com/jatinnjangid/Studypoint"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline"
+                >
+                  GitHub <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
 
             </div>
 
           </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES & FREELANCE SOLUTIONS ================= -->
+    <section class="section services-section" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-label">FREELANCE &amp; CLIENT SERVICES</span>
+
+            <h2>
+              Need a website or
+              <span>custom system?</span>
+            </h2>
+
+            <p class="section-subtext">
+              Business websites · CRM · SaaS · AI automation · Booking systems
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="services-grid">
+
+          <div class="service-card">
+            <span>01</span>
+            <i class="fa-solid fa-globe"></i>
+            <h3>Business Websites</h3>
+            <p>
+              High-performance, responsive websites engineered with clean typography and conversion architecture to turn visitors into paying clients.
+            </p>
+            <a href="#contact" class="service-action-link" data-project-type="Business Website">
+              Discuss This Project <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <span>02</span>
+            <i class="fa-solid fa-chart-pie"></i>
+            <h3>Custom CRM &amp; Dashboards</h3>
+            <p>
+              Tailor-made internal software to organize leads, customer accounts, staff permissions, booking pipelines, and financial analytics.
+            </p>
+            <a href="#contact" class="service-action-link" data-project-type="Custom CRM / Dashboard">
+              Discuss This Project <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <span>03</span>
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>SaaS Applications</h3>
+            <p>
+              Complete software-as-a-service MVPs with user authentication, database architectures, subscription billing, and multi-tenant setups.
+            </p>
+            <a href="#contact" class="service-action-link" data-project-type="SaaS Application">
+              Discuss This Project <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <span>04</span>
+            <i class="fa-solid fa-robot"></i>
+            <h3>AI Automation &amp; Agents</h3>
+            <p>
+              Autonomous LLM workflows, custom retrieval agents, document analysis pipelines, and intelligent chatbots integrated into business workflows.
+            </p>
+            <a href="#contact" class="service-action-link" data-project-type="AI Automation / System">
+              Discuss This Project <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <span>05</span>
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Booking &amp; Reservation Engines</h3>
+            <p>
+              Real-time scheduling systems, slot management, payment gateway integrations, and automatic WhatsApp/Email notifications.
+            </p>
+            <a href="#contact" class="service-action-link" data-project-type="Booking / Reservation Engine">
+              Discuss This Project <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- Freelance Callout Banner -->
+        <div class="freelance-banner">
+          <div class="freelance-banner-text">
+            <span class="cta-badge">ACTIVE AVAILABILITY</span>
+            <h3>Have an idea or custom system requirement?</h3>
+            <p>
+              I take projects from initial system design to production deployment with clean code, modern UI, and dedicated support.
+            </p>
+          </div>
+
+          <a href="#contact" class="btn btn-primary cta-btn">
+            Discuss A Project <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= TECHNICAL ARCHITECTURE ================= -->
+    <section class="section architecture-section" id="architecture">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-label">TECHNICAL CREDIBILITY</span>
+
+            <h2>
+              Production-ready
+              <span>architecture stack.</span>
+            </h2>
+          </div>
+
+          <p class="architecture-subtext">
+            Architected for low latency, zero downtime, modularity, and rapid scalability.
+          </p>
+
+        </div>
+
+
+        <div class="architecture-grid">
+
+          <!-- Layer 1: Frontend -->
+          <div class="arch-card">
+            <div class="arch-header">
+              <span class="arch-layer">Frontend Tier</span>
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>React / Next.js / TypeScript</h3>
+            <p>
+              Component architecture, SSR/SSG rendering, state machines, strict typing, responsive design tokens, and optimal Web Vitals.
+            </p>
+            <div class="arch-pills">
+              <span>Next.js 14</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Tailwind</span>
+            </div>
+          </div>
+
+          <!-- Layer 2: Backend -->
+          <div class="arch-card">
+            <div class="arch-header">
+              <span class="arch-layer">Backend Tier</span>
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <h3>Node.js / Express</h3>
+            <p>
+              RESTful APIs, microservices, asynchronous jobs, JWT authentication, rate limiting, and robust middleware pipelines.
+            </p>
+            <div class="arch-pills">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>REST APIs</span>
+              <span>Microservices</span>
+            </div>
+          </div>
+
+          <!-- Layer 3: Database -->
+          <div class="arch-card">
+            <div class="arch-header">
+              <span class="arch-layer">Database Tier</span>
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>PostgreSQL / MongoDB / Supabase</h3>
+            <p>
+              Relational schemas, NoSQL document stores, connection pooling, indexing, migrations, and row-level security.
+            </p>
+            <div class="arch-pills">
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+              <span>Supabase</span>
+              <span>Prisma</span>
+            </div>
+          </div>
+
+          <!-- Layer 4: AI -->
+          <div class="arch-card">
+            <div class="arch-header">
+              <span class="arch-layer">AI &amp; Automation</span>
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>OpenAI / Gemini / Claude</h3>
+            <p>
+              Multi-agent orchestration, structured JSON outputs, function calling, RAG pipelines, embeddings, and context window optimization.
+            </p>
+            <div class="arch-pills">
+              <span>OpenAI</span>
+              <span>Gemini</span>
+              <span>Claude</span>
+              <span>LangGraph</span>
+            </div>
+          </div>
+
+          <!-- Layer 5: Cloud -->
+          <div class="arch-card">
+            <div class="arch-header">
+              <span class="arch-layer">Cloud &amp; DevOps</span>
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <h3>AWS / Vercel / Docker</h3>
+            <p>
+              Containerization, serverless edge functions, CDN caching, automated CI/CD deployments, and environment isolation.
+            </p>
+            <div class="arch-pills">
+              <span>AWS EC2/S3</span>
+              <span>Vercel</span>
+              <span>Docker</span>
+              <span>CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Layer 6: Realtime -->
+          <div class="arch-card">
+            <div class="arch-header">
+              <span class="arch-layer">Realtime &amp; Cache</span>
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3>Socket.IO / Redis</h3>
+            <p>
+              Bidirectional WebSockets, pub/sub event broadcasting, in-memory caching, queue management, and distributed session states.
+            </p>
+            <div class="arch-pills">
+              <span>Socket.IO</span>
+              <span>Redis</span>
+              <span>Pub/Sub</span>
+              <span>WebSockets</span>
+            </div>
+          </div>
 
         </div>
 
@@ -493,7 +941,7 @@
               <i class="fa-solid fa-cloud"></i>
             </div>
 
-            <h3>Cloud & DevOps</h3>
+            <h3>Cloud &amp; DevOps</h3>
 
             <div class="skill-list">
               <span>AWS</span>
@@ -549,8 +997,7 @@
               </h4>
 
               <p>
-                Worked on travel platforms, CRM systems, business
-                workflows, dashboards and customer-facing applications.
+                Engineered production travel platforms, business CRM systems, lead pipelines, role-based workflows, and customer-facing web applications.
               </p>
 
             </div>
@@ -569,7 +1016,7 @@
               </span>
 
               <h3>
-                B.Tech Computer Science & Engineering
+                B.Tech Computer Science &amp; Engineering
               </h3>
 
               <h4>
@@ -577,83 +1024,11 @@
               </h4>
 
               <p>
-                Focused on software engineering, artificial intelligence,
-                machine learning and practical product development.
+                Specializing in software engineering, artificial intelligence, distributed systems, and modern product development.
               </p>
 
             </div>
 
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= SERVICES ================= -->
-    <section class="section services-section" id="services">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div>
-            <span class="section-label">WHAT I BUILD</span>
-
-            <h2>
-              Digital products built
-              <span>for growth.</span>
-            </h2>
-          </div>
-
-        </div>
-
-
-        <div class="services-grid">
-
-          <div class="service-card">
-            <span>01</span>
-            <i class="fa-solid fa-globe"></i>
-            <h3>Business Websites</h3>
-            <p>
-              Fast, responsive websites designed to generate enquiries
-              and build trust.
-            </p>
-          </div>
-
-
-          <div class="service-card">
-            <span>02</span>
-            <i class="fa-solid fa-layer-group"></i>
-            <h3>SaaS Applications</h3>
-            <p>
-              Scalable dashboards, multi-tenant systems and subscription
-              products.
-            </p>
-          </div>
-
-
-          <div class="service-card">
-            <span>03</span>
-            <i class="fa-solid fa-robot"></i>
-            <h3>AI Applications</h3>
-            <p>
-              AI agents, automation workflows and intelligent business
-              applications.
-            </p>
-          </div>
-
-
-          <div class="service-card">
-            <span>04</span>
-            <i class="fa-solid fa-chart-line"></i>
-            <h3>CRM & Dashboards</h3>
-            <p>
-              Custom management platforms for leads, employees,
-              customers and analytics.
-            </p>
           </div>
 
         </div>
@@ -687,37 +1062,37 @@
 
           <div class="contact-details">
 
-            <a href="mailto:jatinjangid72973@gmail.com">
+            <a
+              href="https://wa.me/?text=Hi%20Jatin,%20I'd%20like%20to%20discuss%20a%20project"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline contact-whatsapp-btn"
+            >
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+
+            <a href="mailto:jatinjangid72973@gmail.com" class="email-direct-link">
               <i class="fa-solid fa-envelope"></i>
-              <span>
-                <small>Email</small>
-                jatinjangid72973@gmail.com
-              </span>
+              <span>Email Me: jatinjangid72973@gmail.com</span>
             </a>
 
-            <a
-              href="https://github.com/jatinnjangid"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-brands fa-github"></i>
-              <span>
-                <small>GitHub</small>
-                github.com/jatinnjangid
-              </span>
-            </a>
+            <div class="contact-social-mini">
+              <a
+                href="https://github.com/jatinnjangid"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github"></i> GitHub ↗
+              </a>
 
-            <a
-              href="https://www.linkedin.com/in/jatinnjangid"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-brands fa-linkedin-in"></i>
-              <span>
-                <small>LinkedIn</small>
-                linkedin.com/in/jatinnjangid
-              </span>
-            </a>
+              <a
+                href="https://www.linkedin.com/in/jatinnjangid"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-linkedin-in"></i> LinkedIn ↗
+              </a>
+            </div>
 
           </div>
 
@@ -762,27 +1137,31 @@
             <select id="project" name="project">
 
               <option value="">
-                Select a project
+                Select a project type
               </option>
 
               <option value="Business Website">
                 Business Website
               </option>
 
+              <option value="Custom CRM / Dashboard">
+                Custom CRM / Dashboard
+              </option>
+
               <option value="SaaS Application">
                 SaaS Application
               </option>
 
-              <option value="AI Application">
-                AI Application
+              <option value="AI Automation / System">
+                AI Automation / System
               </option>
 
-              <option value="CRM / Dashboard">
-                CRM / Dashboard
+              <option value="Booking / Reservation Engine">
+                Booking / Reservation Engine
               </option>
 
-              <option value="E-Commerce">
-                E-Commerce
+              <option value="Other Custom Software">
+                Other Custom Software
               </option>
 
             </select>
@@ -811,7 +1190,7 @@
             type="submit"
             class="btn btn-primary submit-btn"
           >
-            Send Project Inquiry
+            Send Message
             <i class="fa-solid fa-arrow-right"></i>
           </button>
 
@@ -841,31 +1220,28 @@
 
       </div>
 
-      <div class="footer-social">
+      <div class="footer-links">
 
         <a
           href="https://github.com/jatinnjangid"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="GitHub Profile"
         >
-          <i class="fa-brands fa-github"></i>
+          GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
 
         <a
           href="https://www.linkedin.com/in/jatinnjangid"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="LinkedIn Profile"
         >
-          <i class="fa-brands fa-linkedin-in"></i>
+          LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
 
         <a
-          href="mailto:jatinjangid72973@gmail.com"
-          aria-label="Send Email"
+          href="mailto:jatinjangid72973@gmail.com?subject=Resume%20Request%20-%20Jatin%20Jangid"
         >
-          <i class="fa-solid fa-envelope"></i>
+          Resume <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
 
       </div>
@@ -882,7 +1258,7 @@
   <!-- ================= MOBILE CTA ================= -->
   <div class="mobile-bottom-bar">
 
-    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/?text=Hi%20Jatin,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">
       <i class="fa-brands fa-whatsapp"></i>
       WhatsApp
     </a>
@@ -919,6 +1295,16 @@
           }
         });
       });
+
+      // Close mobile menu if clicked outside
+      document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+          navLinks.classList.remove('open');
+          if (menuIcon) {
+            menuIcon.classList.replace('fa-xmark', 'fa-bars');
+          }
+        }
+      });
     }
 
     // Update active nav link on scroll
@@ -934,6 +1320,21 @@
           if (navAnchor) navAnchor.classList.add('active');
         } else {
           if (navAnchor) navAnchor.classList.remove('active');
+        }
+      });
+    });
+
+    // Auto-select project type when clicking "Discuss This Project"
+    document.querySelectorAll('.service-action-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const projectType = link.getAttribute('data-project-type');
+        const projectSelect = document.getElementById('project');
+        if (projectSelect && projectType) {
+          projectSelect.value = projectType;
+          const messageField = document.getElementById('message');
+          if (messageField) {
+            setTimeout(() => messageField.focus(), 400);
+          }
         }
       });
     });

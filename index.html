@@ -35,7 +35,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
 
-  <link rel="stylesheet" href="style.css?v=2.5" />
+  <link rel="stylesheet" href="style.css?v=2.6" />
 </head>
 
 <body>
@@ -1213,98 +1213,158 @@
 
         <form class="contact-form" action="https://formspree.io/f/mkjobrng" method="POST">
 
-          <div class="input-row">
+          <!-- Normal Form State -->
+          <div class="form-fields-wrap" id="formFieldsWrap">
 
-            <div class="input-group">
-              <label for="name">Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your name"
-                required
-              />
+            <div class="input-row">
+
+              <div class="input-group">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
             </div>
 
+
             <div class="input-group">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
+
+              <label for="project">
+                Project Type
+              </label>
+
+              <select id="project" name="project">
+
+                <option value="">
+                  Select a project type
+                </option>
+
+                <option value="Business Website">
+                  Business Website
+                </option>
+
+                <option value="Custom CRM / Dashboard">
+                  Custom CRM / Dashboard
+                </option>
+
+                <option value="SaaS Application">
+                  SaaS Application
+                </option>
+
+                <option value="AI Automation / System">
+                  AI Automation / System
+                </option>
+
+                <option value="Booking / Reservation Engine">
+                  Booking / Reservation Engine
+                </option>
+
+                <option value="Other Custom Software">
+                  Other Custom Software
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="input-group">
+
+              <label for="message">
+                Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell me about your project..."
                 required
-              />
+              ></textarea>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="btn btn-primary submit-btn"
+            >
+              Send Message
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+          </div>
+
+          <!-- Celebratory Thank You State -->
+          <div class="form-success-card" id="formSuccessCard" style="display: none;">
+
+            <div class="success-icon-wrap">
+              <div class="success-icon-halo"></div>
+              <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+
+            <span class="success-badge">INQUIRY DELIVERED</span>
+
+            <h3 class="success-title">
+              Thank you, <span id="successUserName">there</span>! 🎉
+            </h3>
+
+            <p class="success-desc">
+              Your message has been delivered directly to my inbox. I review every submission personally and will reply to your email shortly.
+            </p>
+
+            <div class="success-meta-box">
+              <div class="meta-item">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                  <small>Expected Response</small>
+                  <strong>Within 2–4 hours</strong>
+                </div>
+              </div>
+
+              <div class="meta-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <small>Status</small>
+                  <strong class="status-live-text">Queued &amp; Verified</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="success-actions">
+              <a
+                href="https://wa.me/?text=Hi%20Jatin,%20I%20just%20sent%20a%20project%20inquiry%20via%20your%20portfolio!"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary success-wa-btn"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp Now
+              </a>
+
+              <button type="button" class="btn btn-outline" id="resetFormBtn">
+                <i class="fa-solid fa-arrow-rotate-left"></i> Send Another Message
+              </button>
             </div>
 
           </div>
-
-
-          <div class="input-group">
-
-            <label for="project">
-              Project Type
-            </label>
-
-            <select id="project" name="project">
-
-              <option value="">
-                Select a project type
-              </option>
-
-              <option value="Business Website">
-                Business Website
-              </option>
-
-              <option value="Custom CRM / Dashboard">
-                Custom CRM / Dashboard
-              </option>
-
-              <option value="SaaS Application">
-                SaaS Application
-              </option>
-
-              <option value="AI Automation / System">
-                AI Automation / System
-              </option>
-
-              <option value="Booking / Reservation Engine">
-                Booking / Reservation Engine
-              </option>
-
-              <option value="Other Custom Software">
-                Other Custom Software
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <div class="input-group">
-
-            <label for="message">
-              Message
-            </label>
-
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              placeholder="Tell me about your project..."
-              required
-            ></textarea>
-
-          </div>
-
-
-          <button
-            type="submit"
-            class="btn btn-primary submit-btn"
-          >
-            Send Message
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
 
         </form>
 
@@ -1473,8 +1533,39 @@
       });
     });
 
-    // In-page AJAX contact form handler to prevent Formspree redirects
+    // Confetti burst animation for form success
+    function triggerFormConfetti() {
+      const container = document.querySelector('.contact-form');
+      if (!container) return;
+      const colors = ['#cf4d4d', '#57d47c', '#ffffff', '#ffd166', '#64dfdf'];
+      for (let i = 0; i < 45; i++) {
+        const conf = document.createElement('div');
+        conf.className = 'confetti-particle';
+        conf.style.left = (15 + Math.random() * 70) + '%';
+        conf.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        conf.style.setProperty('--dx', (Math.random() * 260 - 130) + 'px');
+        conf.style.setProperty('--dy', (-60 - Math.random() * 160) + 'px');
+        conf.style.setProperty('--rot', (Math.random() * 720 - 360) + 'deg');
+        container.appendChild(conf);
+        setTimeout(() => conf.remove(), 1300);
+      }
+    }
+
+    // In-page AJAX contact form handler
     const contactForm = document.querySelector('.contact-form');
+    const formFieldsWrap = document.getElementById('formFieldsWrap');
+    const formSuccessCard = document.getElementById('formSuccessCard');
+    const resetFormBtn = document.getElementById('resetFormBtn');
+
+    if (resetFormBtn && formFieldsWrap && formSuccessCard) {
+      resetFormBtn.addEventListener('click', () => {
+        formSuccessCard.style.display = 'none';
+        formFieldsWrap.style.display = 'block';
+        const nameField = document.getElementById('name');
+        if (nameField) setTimeout(() => nameField.focus(), 200);
+      });
+    }
+
     if (contactForm) {
       contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -1488,18 +1579,12 @@
         const message = document.getElementById('message')?.value || '';
 
         let statusBox = document.getElementById('formStatusBox');
-        if (!statusBox) {
-          statusBox = document.createElement('div');
-          statusBox.id = 'formStatusBox';
-          statusBox.className = 'form-status-box';
-          contactForm.appendChild(statusBox);
-        }
 
         if (submitBtn) {
           submitBtn.disabled = true;
-          submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+          submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Delivering message...';
         }
-        statusBox.style.display = 'none';
+        if (statusBox) statusBox.style.display = 'none';
 
         const formData = new FormData(contactForm);
         let success = false;
@@ -1518,12 +1603,25 @@
         }
 
         if (success) {
-          statusBox.className = 'form-status-box form-status-success';
-          statusBox.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you, ' + name + '! Your message has been sent successfully. I will get back to you shortly.';
-          statusBox.style.display = 'flex';
+          // Celebratory Thank You State
+          const successUserName = document.getElementById('successUserName');
+          if (successUserName) {
+            successUserName.textContent = name.trim() || 'there';
+          }
+          if (formFieldsWrap) formFieldsWrap.style.display = 'none';
+          if (formSuccessCard) {
+            formSuccessCard.style.display = 'flex';
+          }
+          triggerFormConfetti();
           contactForm.reset();
         } else {
-          // Graceful fallback: Formspree endpoint not yet verified or failed
+          // Fallback if network drops or Formspree limit reached
+          if (!statusBox) {
+            statusBox = document.createElement('div');
+            statusBox.id = 'formStatusBox';
+            statusBox.className = 'form-status-box';
+            contactForm.appendChild(statusBox);
+          }
           const mailtoUrl = `mailto:jatinjangid72973@gmail.com?subject=${encodeURIComponent('Project Inquiry: ' + project + ' from ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nProject Type: ' + project + '\n\nMessage:\n' + message)}`;
           const waUrl = `https://wa.me/?text=${encodeURIComponent('Hi Jatin, I sent a project inquiry:\nName: ' + name + '\nProject: ' + project + '\nMessage: ' + message)}`;
 
@@ -1546,7 +1644,6 @@
             </div>
           `;
           statusBox.style.display = 'flex';
-          // Trigger mail client as fallback
           window.location.href = mailtoUrl;
         }
 

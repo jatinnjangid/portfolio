@@ -1725,6 +1725,69 @@ img {
   cursor: pointer;
 }
 
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* FORM STATUS & FALLBACK */
+
+.form-status-box {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-status-success {
+  background: rgba(87, 212, 124, 0.1);
+  border: 1px solid rgba(87, 212, 124, 0.35);
+  color: #57d47c;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-status-notice {
+  background: rgba(207, 77, 77, 0.08);
+  border: 1px solid rgba(207, 77, 77, 0.3);
+  color: #ffffff;
+}
+
+.form-status-notice .status-msg {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-status-notice .status-msg i {
+  color: var(--accent-light);
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.form-status-notice .status-msg strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.form-status-notice .status-msg p {
+  color: #a3a3a3;
+  font-size: 13px;
+  margin: 0;
+}
+
+.form-status-notice .status-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 
 /* =========================================================
    FOOTER

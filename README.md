@@ -24,4 +24,4 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 ## 📁 Files
 - `index.html` — Website markup
 - `style.css` — Styling and responsive layout
-- `profile.jpg` / `jatin.webp` — Profile photo
+- `jatinn.png` — Profile photo

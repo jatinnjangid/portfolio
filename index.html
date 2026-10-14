@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-  <link rel="stylesheet" href="style.css?v=3.0" />
+  <link rel="stylesheet" href="style.css?v=3.1" />
 </head>
 
 <body>
@@ -1020,8 +1020,8 @@
           </span>
 
           <h2>
-            Have an idea?
-            <span>Let's make it real.</span>
+            <span class="contact-title-top">Have an idea?</span>
+            <span class="contact-title-accent">Let's make it real.</span>
           </h2>
 
           <p>
@@ -1030,18 +1030,30 @@
             your project.
           </p>
 
-          <div class="contact-details">
+          <div class="contact-status-chip">
+            <span class="status-dot"></span>
+            <span>Available for new projects · Fast reply within 2 hours</span>
+          </div>
+
+          <div class="contact-quick-links">
 
             <a href="https://wa.me/?text=Hi%20Jatin,%20I'd%20like%20to%20discuss%20a%20project" target="_blank"
-              rel="noopener noreferrer" class="btn btn-outline contact-whatsapp-btn">
-              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+              rel="noopener noreferrer" class="contact-pill-link whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Chat on WhatsApp</span>
+              <i class="fa-solid fa-arrow-up-right-from-square mini-arrow"></i>
             </a>
 
-            <a href="mailto:jatinjangid72973@gmail.com" class="email-direct-link">
+            <a href="mailto:jatinjangid72973@gmail.com" class="contact-pill-link email">
               <i class="fa-solid fa-envelope"></i>
-              <span>Email Me: jatinjangid72973@gmail.com</span>
+              <span>jatinjangid72973@gmail.com</span>
+              <i class="fa-solid fa-arrow-right mini-arrow"></i>
             </a>
 
+          </div>
+
+          <div class="contact-social-row">
+            <span class="social-label">Connect on:</span>
             <div class="contact-social-mini">
               <a href="https://github.com/jatinnjangid" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i> GitHub ↗
@@ -1050,8 +1062,11 @@
               <a href="https://www.linkedin.com/in/jatinnjangid" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin-in"></i> LinkedIn ↗
               </a>
-            </div>
 
+              <a href="https://x.com/jatin_jangid80" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-x-twitter"></i> X ↗
+              </a>
+            </div>
           </div>
 
         </div>
@@ -1065,13 +1080,19 @@
             <div class="input-row">
 
               <div class="input-group">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your name" required />
+                <label for="name">Your Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user"></i>
+                  <input id="name" name="name" type="text" placeholder="e.g. Alex Smith" required />
+                </div>
               </div>
 
               <div class="input-group">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                <label for="email">Your Email</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input id="email" name="email" type="email" placeholder="alex@company.com" required />
+                </div>
               </div>
 
             </div>
@@ -1080,40 +1101,44 @@
             <div class="input-group">
 
               <label for="project">
-                Project Type
+                Project Scope
               </label>
 
-              <select id="project" name="project">
+              <div class="input-wrapper select-wrapper">
+                <i class="fa-solid fa-layer-group"></i>
+                <select id="project" name="project">
 
-                <option value="">
-                  Select a project type
-                </option>
+                  <option value="">
+                    Select a project type
+                  </option>
 
-                <option value="Business Website">
-                  Business Website
-                </option>
+                  <option value="Business Website">
+                    Business Website
+                  </option>
 
-                <option value="Custom CRM / Dashboard">
-                  Custom CRM / Dashboard
-                </option>
+                  <option value="Custom CRM / Dashboard">
+                    Custom CRM / Dashboard
+                  </option>
 
-                <option value="SaaS Application">
-                  SaaS Application
-                </option>
+                  <option value="SaaS Application">
+                    SaaS Application
+                  </option>
 
-                <option value="AI Automation / System">
-                  AI Automation / System
-                </option>
+                  <option value="AI Automation / System">
+                    AI Automation / System
+                  </option>
 
-                <option value="Booking / Reservation Engine">
-                  Booking / Reservation Engine
-                </option>
+                  <option value="Booking / Reservation Engine">
+                    Booking / Reservation Engine
+                  </option>
 
-                <option value="Other Custom Software">
-                  Other Custom Software
-                </option>
+                  <option value="Other Custom Software">
+                    Other Custom Software
+                  </option>
 
-              </select>
+                </select>
+                <i class="fa-solid fa-chevron-down select-arrow"></i>
+              </div>
 
             </div>
 
@@ -1124,16 +1149,23 @@
                 Message
               </label>
 
-              <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..."
-                required></textarea>
+              <div class="input-wrapper textarea-wrapper">
+                <textarea id="message" name="message" rows="5" placeholder="Describe your goals, timeline, and requirements..."
+                  required></textarea>
+              </div>
 
             </div>
 
 
             <button type="submit" class="btn btn-primary submit-btn">
-              Send Message
+              <span>Send Message</span>
               <i class="fa-solid fa-arrow-right"></i>
             </button>
+
+            <div class="form-guarantee">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>100% Privacy Protected · Direct Delivery · Fast Response</span>
+            </div>
 
           </div>
 
@@ -1203,7 +1235,7 @@
 
     <div class="container footer-wrapper">
 
-      <div>
+      <div class="footer-brand">
 
         <a href="#home" class="logo">
           jatin<span>codex</span>
@@ -1213,36 +1245,64 @@
           Full-Stack Developer &amp; AI Engineer.
         </p>
 
+        <span class="footer-availability">
+          <span class="status-dot"></span> Available for freelance &amp; full-time contracts
+        </span>
+
       </div>
 
-      <div class="footer-social-tabs">
+      <div class="footer-links-group">
 
-        <a href="https://github.com/jatinnjangid" target="_blank" rel="noopener noreferrer" class="footer-tab"
-          aria-label="GitHub Profile" title="GitHub Profile">
-          <i class="fa-brands fa-github"></i>
-        </a>
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
 
-        <a href="https://www.linkedin.com/in/jatinnjangid" target="_blank" rel="noopener noreferrer" class="footer-tab"
-          aria-label="LinkedIn Profile" title="LinkedIn Profile">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
+        <div class="footer-social-tabs">
 
-        <a href="mailto:jatinjangid72973@gmail.com?subject=Resume%20Request%20-%20Jatin%20Jangid" target="_blank"
-          rel="noopener noreferrer" class="footer-tab" aria-label="Request Resume" title="Request Resume">
-          <i class="fa-solid fa-file-lines"></i>
-        </a>
+          <a href="https://github.com/jatinnjangid" target="_blank" rel="noopener noreferrer" class="footer-tab"
+            aria-label="GitHub Profile" title="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
 
-        <a href="mailto:jatinjangid72973@gmail.com" target="_blank" rel="noopener noreferrer" class="footer-tab"
-          aria-label="Send Email" title="Send Email">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
+          <a href="https://www.linkedin.com/in/jatinnjangid" target="_blank" rel="noopener noreferrer" class="footer-tab"
+            aria-label="LinkedIn Profile" title="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://x.com/jatin_jangid80" target="_blank" rel="noopener noreferrer" class="footer-tab"
+            aria-label="X Profile" title="X Profile">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a href="mailto:jatinjangid72973@gmail.com?subject=Resume%20Request%20-%20Jatin%20Jangid" target="_blank"
+            rel="noopener noreferrer" class="footer-tab" aria-label="Request Resume" title="Request Resume">
+            <i class="fa-solid fa-file-lines"></i>
+          </a>
+
+          <a href="mailto:jatinjangid72973@gmail.com" target="_blank" rel="noopener noreferrer" class="footer-tab"
+            aria-label="Send Email" title="Send Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+        </div>
 
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      &copy; 2026 Jatin Jangid. All rights reserved.
+      <div class="container footer-bottom-inner">
+        <span>&copy; 2026 Jatin Jangid. All rights reserved.</span>
+        <a href="#home" class="back-to-top">
+          Back to top <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
     </div>
 
   </footer>
